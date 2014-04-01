@@ -67,7 +67,7 @@ public class LowDetailView extends ViewWithNavigation {
 
 	@Override
 	public void navigateUp() {
-		// TODO Auto-generated method stub
+		
 
 	}
 

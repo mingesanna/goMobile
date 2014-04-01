@@ -25,8 +25,7 @@ public class Main extends ViewWithNavigation {
 
 	@Override
 	public void navigateLeft() {
-		// TODO Auto-generated method stub
-
+		startActivity(new Intent(this, ShoppingCartView.class));
 	}
 
 	@Override

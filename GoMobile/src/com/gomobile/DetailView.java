@@ -27,7 +27,7 @@ public class DetailView extends ViewWithNavigation  {
 
 	@Override
 	public void navigateRight() {
-		// TODO Auto-generated method stub
+		ShoppingCart.getInstance().add(ScannerController.getInstance().getComponentInUse());
 		
 	}
 

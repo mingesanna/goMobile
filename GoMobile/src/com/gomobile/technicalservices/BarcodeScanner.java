@@ -11,7 +11,9 @@ import android.widget.Toast;
 
 import com.gomobile.ComparisionView;
 import com.gomobile.LowDetailView;
+import com.gomobile.Main;
 import com.gomobile.ScannerController;
+import com.gomobile.navigation.ViewWithNavigation;
 import com.gomobile.scanner.model.Part;
 import com.mirasense.scanditsdk.ScanditSDKAutoAdjustingBarcodePicker;
 import com.mirasense.scanditsdk.interfaces.ScanditSDK;
@@ -153,4 +155,6 @@ public class BarcodeScanner extends Activity implements ScanditSDKListener {
     	mPicker.stopScanning();
         finish();
     }
+
+	
 }
