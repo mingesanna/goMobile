@@ -1,9 +1,11 @@
 package com.gomobile;
 
+import android.content.Context;
 import android.content.Intent;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.gomobile.navigation.ViewWithNavigation;
 import com.gomobile.scanner.model.Component;
@@ -27,7 +29,13 @@ public class DetailView extends ViewWithNavigation  {
 
 	@Override
 	public void navigateRight() {
+		Context context = getApplicationContext();
 		ShoppingCart.getInstance().add(ScannerController.getInstance().getComponentInUse());
+		CharSequence text = "The component has been saved in your Shopping Cart!";
+		int duration = Toast.LENGTH_SHORT;
+
+		Toast toast = Toast.makeText(context, text, duration);
+		toast.show();
 		
 	}
 

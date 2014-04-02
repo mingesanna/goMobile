@@ -2,6 +2,9 @@ package com.gomobile;
 
 import java.util.HashMap;
 
+import android.content.Context;
+import android.widget.Toast;
+
 import com.gomobile.scanner.model.Component;
 import com.gomobile.scanner.model.Part;
 
@@ -9,15 +12,24 @@ public class ShoppingCart {
 
 	HashMap<String, Component> cart = new HashMap<String, Component>();
 	
-//	public ShoppingCart(){
-//		add(new Part("12312", 23, "bremse"));
-//		add(new Part("45445", 98, "bremse"));
-//		add(new Part("98982", 12, "bremse"));
+//	//create Application Context
+//	Context appcontext;
+//	public ShoppingCart(Context context)
+//	{
+//		appcontext = context;
 //	}
 	
+	// add component to Shopping Cart
 	public void add(Component c){
 		cart.put(c.getName(), c);
+		
+//		CharSequence text = "Hello toast!";
+//		int duration = Toast.LENGTH_SHORT;
+//
+//		Toast toast = Toast.makeText(appcontext, text, duration);
+//		toast.show();
 	}
+	
 	
 	public boolean delete(String key){
 		if(cart.containsKey(key)){

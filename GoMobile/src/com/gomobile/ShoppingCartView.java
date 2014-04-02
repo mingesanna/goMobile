@@ -3,6 +3,7 @@ package com.gomobile;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -37,8 +38,7 @@ public class ShoppingCartView extends ViewWithNavigation {
 	
 	@Override
 	public void navigateRight() {
-		// TODO Auto-generated method stub
-
+		startActivity(new Intent(this, Main.class));
 	}
 
 	@Override
