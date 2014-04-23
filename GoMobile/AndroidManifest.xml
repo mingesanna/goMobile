@@ -62,6 +62,10 @@
             android:name="com.gomobile.ComparisionView"
             android:label="@string/title_activity_comparision_view" >
         </activity>
+         <activity
+            android:name="com.gomobile.ShoppingCartView"
+            android:label="@string/title_activity_shopping_cart_view" >
+        </activity>
     </application>
 
 </manifest>
